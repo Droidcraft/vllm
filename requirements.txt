@@ -6,8 +6,9 @@ pyarrow  # Required for Ray data.
 sentencepiece  # Required for LLaMA tokenizer.
 numpy
 torch >= 2.0.0
-transformers >= 4.33.1  # Required for Code Llama.
+transformers >= 4.34.0 # Required for Mistral
 xformers >= 0.0.22
 fastapi
 uvicorn[standard]
-pydantic < 2  # Required for OpenAI server.
+pydantic >=1.10.12, < 2  # Required for OpenAI server.
+fschat[model_worker]==0.2.24
